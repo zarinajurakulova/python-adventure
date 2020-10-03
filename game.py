@@ -64,6 +64,7 @@ while(decision == ""):
         player_items.append("Potion")
         print("Your items now: ")
         print(player_items)
+print()
 time.sleep(1)
 #            ---section end---           #
 
@@ -87,5 +88,6 @@ while(decision == ""):
         player_money -= 10
         print("Your money now: ")
         print(player_money)
+print()
 time.sleep(1)
 #            ---section end---           #
