@@ -5,6 +5,16 @@
 #          adventure game          #
 ####################################
 
+####################################
+#              Imports             #
+####################################
+
+import time
+
+####################################
+#           Player Assets          #
+####################################
+
 player_name = ""
 player_health = 100
 player_money = 50
@@ -40,28 +50,30 @@ print()
 print("You pass by a traveler who looks injured by the woods. What do you do?")
 print("1. Ignore him")
 print("2. Try to help him")
-decision = input("Pick a number: ")
-print()
-if (decision == "1"):
-    print("You try to leave, but trip over a rock and hit your head!")
-    player_health = player_health - 10
-    print("Your health now: ")
-    print(player_health)
-elif (decision == "2"):
-    print("He appreciates that you helped him, and he gives you a potion! A potion heals 20 health points.")
-    player_items.append("Potion")
-    print("Your items now: ")
-    print(player_items)
+decision = ""
+while(decision == ""):
+    decision = input("Pick a number: ")
+    print()
+    if (decision == "1"):
+        print("You try to leave, but trip over a rock and hit your head!")
+        player_health = player_health - 10
+        print("Your health now: ")
+        print(player_health)
+    elif (decision == "2"):
+        print("He appreciates that you helped him, and he gives you a potion! A potion heals 20 health points.")
+        player_items.append("Potion")
+        print("Your items now: ")
+        print(player_items)
+time.sleep(1)
 #            ---section end---           #
 
-# Section author: Oleg
-print("The Kalbanese police stop you and tries to fine you for being outside during coronavirus!")
+#    ---Section Author: Oleg---   #
+print("The Kanbalese police stop you and tries to fine you for being outside during coronavirus!")
 print("1. Run away")
 print("2. Sign the ticket")
 print()
 decision = ""
 while(decision == ""):
-
     decision = input("Pick a number: ")
     print()
     if (decision == "1"):
@@ -75,3 +87,5 @@ while(decision == ""):
         player_money -= 10
         print("Your money now: ")
         print(player_money)
+time.sleep(1)
+#            ---section end---           #
