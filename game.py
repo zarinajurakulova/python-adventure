@@ -53,3 +53,25 @@ elif (decision == "2"):
     print("Your items now: ")
     print(player_items)
 #            ---section end---           #
+
+# Section author: Oleg
+print("The Kalbanese police stop you and tries to fine you for being outside during coronavirus!")
+print("1. Run away")
+print("2. Sign the ticket")
+print()
+decision = ""
+while(decision == ""):
+
+    decision = input("Pick a number: ")
+    print()
+    if (decision == "1"):
+        print("You ran but police shoot you with rubber bullets")
+        player_health -= 10
+        print("Your health now: ")
+        print(player_health)
+    elif (decision == "2"):
+        print("You signed your ticket and got sent on you way with 10 ticket")
+        print("Now you need to hide and wait till it is safe to walk on the street")
+        player_money -= 10
+        print("Your money now: ")
+        print(player_money)
